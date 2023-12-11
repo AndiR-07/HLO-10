@@ -1,2 +1,8 @@
 # HLO-10
-lectiile si problemele date la cercul Hai la Olimpiada clasa X 2023
+
+## RO:
+Lectiile si problemele date la cercul de excelenta in informatica Hai la Olimpiada Constanta clasa a X-a 2023
+
+## EN:
+Lessons and problems given at "Hai la Olimpiada" Constanta circle of excellence in informatics for 10th grade 2023
+
