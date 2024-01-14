@@ -357,6 +357,7 @@ struct queue{
 #include <deque>
 ```
 ![](https://media.geeksforgeeks.org/wp-content/uploads/20221017165808/Deque.png)
+
 front este prima pozitie, back/rear este ultima pozitie
 ## functionalitati:
 * putem sa stergem / adaugam elemente la ambele capete
