@@ -356,7 +356,8 @@ struct queue{
 ```cpp
 #include <deque>
 ```
-![](https://media.geeksforgeeks.org/wp-content/uploads/anod.png)
+![](https://media.geeksforgeeks.org/wp-content/uploads/20221017165808/Deque.png)
+front este prima pozitie, back/rear este ultima pozitie
 ## functionalitati:
 * putem sa stergem / adaugam elemente la ambele capete
 * desi iese din scopul cozii cu 2 capete, putem sa accesam al k-ulea element prin ```dq[k]```
