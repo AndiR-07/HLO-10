@@ -611,7 +611,7 @@ struct deque{
 * `bset.size()`: returneaza numarul de biti. $O(1)$
 * aparent nu exista swap
 # Tema
-## uitati-va peset containerele:
+## uitati-va peste containerele:
 * pbds(policy based data structures)
     * [Materialul Geeks for Geeks](https://www.geeksforgeeks.org/policy-based-data-structures-g/)
     * [Materialul CodeForces](https://codeforces.com/blog/entry/11080)
