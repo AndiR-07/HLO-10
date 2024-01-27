@@ -368,7 +368,7 @@ int main()
 * In programarea dinamica (DP) ne folosim de chestii (stari) deja calculate pentru a ne forma solutia. De multe ori complexitatea va fi polinomiala $O(N^x)$ (asta pana cand vom invata dinamica pe stari exponentiale dar aia e o lectie pentru alta zi).
 ### **Probleme discutate**:
 #### [Pbinfo - Sumtri1](https://www.pbinfo.ro/probleme/386/sumtri1)
-* Observatia este ca ne-ar ajuta sa stim suma maxima care se incheie cu elementul de pe pozitia $(l, r)$. Notam tabloul acestei sume cu `dp` si pe cel initial cu `mat`.
+* Observatia este ca ne-ar ajuta sa stim suma minima care se incheie cu elementul de pe pozitia $(l, r)$. Notam tabloul acestei sume cu `dp` si pe cel initial cu `mat`.
 * Starea initiala va fi la pozitia $(1, 1)$ si va fi $dp[1][1]=mat[1][1]$.
 * Putem construi urmatoarele stari prin formula $dp[l][r]=min(dp[l-1][r-1], dp[l-1][r])+mat[l][r]$.
 * Putem reconstitui solutia uitandu-ne de la sfarsit catre inceput si punandu-ne intrebarea: **de unde am ajuns in pozitia aceasta**, al carui raspuns va fi: **din elementul cu dp-ul minim care se afla deasupra sau pe diagonala stanga sus**.
