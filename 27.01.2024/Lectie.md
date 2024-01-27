@@ -579,7 +579,7 @@ int main()
 * Implementati toate problemele de azi. Chiar este important.
 * [Infoarena - Lupul Urias si Rau](https://infoarena.ro/problema/lupu) (misto nume)
 * [Pbinfo - Sumtri](https://www.pbinfo.ro/probleme/385/sumtri) (nu accept alta solutie decat cu 2 linii de dp)
-* [CSES - Grid Paths](https://cses.fi/problemset/task/1638) (este chiar simpluta iar idea este extrem de clasica si comuna deci importanta)
+* [CSES - Grid Paths](https://cses.fi/problemset/task/1638) (este chiar simpluta, iar ideea este extrem de clasica si comuna, deci importanta)
 #
 > Stăpâne, stăpâne,  
 Mai chiamă ş-un câne
