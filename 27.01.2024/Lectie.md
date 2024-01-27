@@ -7,7 +7,7 @@
     2. Nu am facut o demonstratie riguroasa, insa daca ar trebui, as cam sti de unde sa incep si unde sa termin.
     3. Habar n-am daca algoritmul meu e bun, insa pare ca ar fi.
 * In cazul in care nu suntem la niciun concurs, ar fi indicat sa scriem o mini-demonstratie de corectitudine a algoritmului nostru, pentru a ne antrena mintea (cazul 1)
-* In cazul in care suntem la un concurs nivelul 2 este indeajuns de *safe* pentru a incepe implementarea. Daca totusi ne aflam la niveul 3, avem de ales intre a risca implementarea unui algoritm ce se poate dovedi a fi gresit, lucru ce va lua timp si a incerca de gasi un motiv pentru care algoritmul nostru merge sau un contraexemplu pentru care nu merge (lucru ce te va salva de la pierdere de timp inutila).
+* In cazul in care suntem la un concurs nivelul 2 este indeajuns de *safe* pentru a incepe implementarea. Daca totusi ne aflam la niveul 3, avem de ales intre a risca implementarea unui algoritm ce se poate dovedi a fi gresit, lucru ce va lua timp si a incerca a gasi un motiv pentru care algoritmul nostru merge sau un contraexemplu pentru care nu merge (lucru ce te va salva de la pierdere de timp inutila).
 ### **Probleme discutate**:
 #### [CSES - Movie Festival](https://cses.fi/problemset/task/1629) (problema spectacolelor)
 * Rezolvarea problemei se bazeaza pe observatia ca ne dorim sa alegem intotdeauna filme care se terimna cat mai devreme, pentru a lasa cat mai mult timp filmelor urmatoare.
