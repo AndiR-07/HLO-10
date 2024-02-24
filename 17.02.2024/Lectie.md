@@ -115,7 +115,7 @@ void parcurgere_recursiv(int x, int y, int ordin){
 parcurgere_recursiv(1, 1, n);
 ```
 ### Cerinta 3:
-Pentru aceasta cerinta limitele de timp erau indeajuns de mari incat sa permita verificarea primalitatii unui numar atat folosind ciurul lui Eratosthenes ce permite o complexitate totala de $O(N^2+Vmax \cdot log \; log \; Vmax)$, cat si folosind o verificare in $O(\sqrt {Vmax})$, complexitatea totala fiind $O(N^2 \cdot \sqrt {Vmax})$. Este totusi de preferat sa folositi ciurul, deoarece in conditiile actuale, complexitatea lui era mai mica.
+Pentru aceasta cerinta limitele de timp erau indeajuns de mari incat sa permita verificarea primalitatii unui numar atat folosind ciurul lui Eratosthenes ce permite o complexitate totala de $O(N^2+Vmax \cdot log \ log \ Vmax)$, cat si folosind o verificare in $O(\sqrt {Vmax})$, complexitatea totala fiind $O(N^2 \cdot \sqrt {Vmax})$. Este totusi de preferat sa folositi ciurul, deoarece in conditiile actuale, complexitatea lui era mai mica.
 
 Exemplu de implementare:
 ```cpp
@@ -143,7 +143,7 @@ for (int i=1; i<=n; i++)
             fout<<i<<' '<<j<<'\n';
 ```
 ### Cerinta 4:
-Pentru aceasta cerinta modalitatile de verificare a primalitatii unui numar raman aceleasi. Pentru a raspunde in $O(1)$ la intrebari va trebui sa ne formam o matrice de sume partiale, in care `sp[i][j]=numarul de numere prime de la (0, 0) pana la (i, j)`. Complexitatea folosind ciurul va fi  $O(N^2+Q+Vmax \cdot log \; log \; Vmax)$
+Pentru aceasta cerinta modalitatile de verificare a primalitatii unui numar raman aceleasi. Pentru a raspunde in $O(1)$ la intrebari va trebui sa ne formam o matrice de sume partiale, in care `sp[i][j]=numarul de numere prime de la (0, 0) pana la (i, j)`. Complexitatea folosind ciurul va fi  $O(N^2+Q+Vmax \cdot log \ log \ Vmax)$
 
 Exemplu de implemantare:
 ```cpp
