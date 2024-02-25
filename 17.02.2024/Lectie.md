@@ -486,22 +486,16 @@ Intreabarea este urmatoarea: cum putem calcula rapid $n^k \ $?
     }
     ```
     $\cdots$ si ar avea complexitatea $O(k)$
-* Ne putem folosi de observatia ca
+* Ne putem folosi de observatia ca $`n^k = \begin{cases} 1 &\text{daca } k=0 \\ (n^2)^{k/2} &\text{daca } k\%2=0 \\ n \cdot n^{k-1} &\text{daca } k\%2=1 \end{cases}`$
 
-$$n^k = \begin{cases}
-    1 &\text{daca } k=0 \\
-   (n^2)^{k/2} &\text{daca } k\%2=0 \\
-   n \cdot n^{k-1} &\text{daca } k\%2=1
-\end{cases} \$$
-
-pentru a scrie urmatoarea functie:
+	pentru a scrie urmatoarea functie:
     ```cpp
     int pow(int n, int k){
-        if (k==0)
-            return 1;
-        if (k%2==0)
-            return pow(n*n, k/2);
-        return n*pow(n, k-1);
+	if (k==0)
+	    return 1;
+	if (k%2==0)
+	    return pow(n*n, k/2);
+	return n*pow(n, k-1);
     }
     ```
     Deoarece o data la maxim 2 pasi exponentul se va imparti la 2, complexitatea este $O(log \ k)$. Acest algoritm poarta numele de **Exponentiere Rapida**.
