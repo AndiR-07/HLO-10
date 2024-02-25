@@ -486,12 +486,14 @@ Intreabarea este urmatoarea: cum putem calcula rapid $n^k \ $?
     }
     ```
     $\cdots$ si ar avea complexitatea $O(k)$
-* Ne putem folosi de observatia ca 
-$n^k = \begin{cases}
+* Ne putem folosi de observatia ca
+
+$$n^k = \begin{cases}
     1 &\text{daca } k=0 \\
    (n^2)^{k/2} &\text{daca } k\%2=0 \\
    n \cdot n^{k-1} &\text{daca } k\%2=1
-\end{cases} \ $
+\end{cases} \$$
+
 pentru a scrie urmatoarea functie:
     ```cpp
     int pow(int n, int k){
