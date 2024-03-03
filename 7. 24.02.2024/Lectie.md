@@ -7,7 +7,7 @@ Combinatorica este latura matematicii care se ocupa de numararea unui numar de p
 * Fie multimea $M$. Multimea $S$ este submultime a multimii $M$ daca $S \subset M$.
 * Fie $S_n$ numarul de submultimi ale unei multimi de $n$ elemente
 * **Lema:** $S_n=2^n$
-* **Demonstratie:** Fiecare element poate sa fie sau poate sa nu fie luat in submultime $=>$ fiecare element poate fi in $2$ stari $=>$ $S_n=2^n$.
+* **Demonstratie:** Fiecare element poate sa fie sau poate sa nu fie luat in submultime $\implies$ fiecare element poate fi in $2$ stari $\implies$ $S_n=2^n$.
 
 ## [Permutari](https://ro.wikipedia.org/wiki/Permutare)
 * O **permutare** a unei multimi reprezinta o ordonare a multimii.
@@ -26,7 +26,7 @@ Combinatorica este latura matematicii care se ocupa de numararea unui numar de p
 * O **combinare** a unei multimi reprezinta o submultime neordonata a acesteia
 * Numarul de combinari ale unei multimi de $n$ elemente luate cate $k$ va fi notata cu $C_n^k$ sau $\dbinom{n}{k}$.
 * **Lema: $C_n^k=\dfrac{n!}{k!\ (n-k)!}\ $**.
-* **Demonstratie:** $S_k$ o submultime de $k$ elemente a multimii initiale $S$. Exista $P_k=k!$ modalitati de a ordona aceasta submultime $=>$ fiecarei combinari ii corespund $P_k$ aranjamente $=>$ $C_n^k=\dfrac{A_n^k}{p_k}=\dfrac{n!}{k!\ (n-k)!}\ $.
+* **Demonstratie:** $S_k$ o submultime de $k$ elemente a multimii initiale $S$. Exista $P_k=k!$ modalitati de a ordona aceasta submultime $\implies$ fiecarei combinari ii corespund $P_k$ aranjamente $\implies$ $C_n^k=\dfrac{A_n^k}{p_k}=\dfrac{n!}{k!\ (n-k)!}\ $.
 * **Observatii:**
 
     1. $C_n^0=C_n^n=1$
@@ -44,10 +44,10 @@ Combinatorica este latura matematicii care se ocupa de numararea unui numar de p
     1. Daca convertim numarul format din elementele de pe colana $n$ in baza $10$ acesta va fi $=11^n$
 
 ## [Permutari cu Repetitie](https://www.pbinfo.ro/articole/18941/elemente-de-combinatorica#intlink-3)
-* Fie $n$ obiecte de $k$ tipuri diferite. Exista $T_i$ obiecte de tip $i => \displaystyle\sum_{i=1}^k T_i=n$
+* Fie $n$ obiecte de $k$ tipuri diferite. Exista $T_i$ obiecte de tip $i \implies\displaystyle\sum_{i=1}^k T_i=n$
 * Fie $P_R$ numarul de permutari diferite ale celor n obiecte (doua permutari sunt diferite daca pe macar o pozitie tipul obiectului este diferit).
 * **Lema:** $P_R=\dfrac{n!}{T_1!\cdot T_2!\cdots T_k!}$.
-* **Demonstratie:** Luam o permutare $P$. Fie $D_i$ dispunerea elementelor de tip $i$ in permutarea $P$. Daca fiecarui element de tip $i$ ii dam un numar de ordine $=>$ exista $T_i!$ permutari ale acestor elemente $=>$ exista $T_i!$ dispuneri $=D_i$ dar care au ordinea numerelor de ordine diferita $=>$ pentru fiecare permutare cu repetitie, pentru un tip $i$ corespund $T_i!$ dispuneri egale cu $D_i$ dar pentru care numarul de ordine difera $=>P_R=\dfrac{n!}{T_1!\cdot T_2!\cdots T_k!}$
+* **Demonstratie:** Luam o permutare $P$. Fie $D_i$ dispunerea elementelor de tip $i$ in permutarea $P$. Daca fiecarui element de tip $i$ ii dam un numar de ordine $\implies$ exista $T_i!$ permutari ale acestor elemente $\implies$ exista $T_i!$ dispuneri $=D_i$ dar care au ordinea numerelor de ordine diferita $\implies$ pentru fiecare permutare cu repetitie, pentru un tip $i$ corespund $T_i!$ dispuneri egale cu $D_i$ dar pentru care numarul de ordine difera $\implies P_R=\dfrac{n!}{T_1!\cdot T_2!\cdots T_k!}$
 
 ## [Stars and Bars](https://www.pbinfo.ro/articole/25586/stars-and-bars)
 * Fie $n$ obiecte si $k$ cutii.
@@ -57,15 +57,15 @@ Combinatorica este latura matematicii care se ocupa de numararea unui numar de p
 
     De exemplu o configuratie de 6 obiecte si 4 cutii in care prima cutie contine un obiect, a doua contine $2$, a treia nu contine niciunul si a patra contine $3$ va fi reprezentata: `⋆|⋆⋆||⋆⋆⋆` 
 
-    Problema se reduce la o permutare cu repetitie a $n+k-1$ obiecte, $n$ de un tip si $k-1$ de alt tip $=>S_b=\dfrac{(n+k-1)!}{n!\ (k-1)!}=C_{n+k-1}^{k-1}$
+    Problema se reduce la o permutare cu repetitie a $n+k-1$ obiecte, $n$ de un tip si $k-1$ de alt tip $\implies S_b=\dfrac{(n+k-1)!}{n!\ (k-1)!}=C_{n+k-1}^{k-1}$
 
 ## [Numerele lui Catalan](https://ro.wikipedia.org/wiki/Num%C4%83r_Catalan)
 * Fie o parantezare corecta o dispunere de `(` (paranteze deschise) si `)` (paranteze inchise) astefel incat fiecare `)` poate formea pereche cu o `(` din stanga lui neimperecheata cu alta `)`.
 * Fie $C_n$ (numar Catalan) numarul de parantezari corecte cu $n$ paranteze deschise si $n$ paranteze inchise.
 * **Lema:** $C_n=\displaystyle\sum_{i=0}^{n-1} C_i \ C_{n-i-1}$
-* **Demonstratie:** Impartim o parantezare corecta in 2 parti: Prima parte va fi cel mai scurt subfix parantezat corect, iar cealalta parte restul. Vom itera cu un indice $i$ de la $0$ la $n-1$. Prima parte va fi imprejmuita de o pereche de paranteze, si deci numarul de posibilitati de parantezare corecta a acesteia este $C_i\ $. Ramanem cu $n-i-1$ perechi de paranteze pentru a doua parte, deci $C_{n-i-1}$ posibilitati $=>$ pentru un $i$ selectat avem formula $C_i \ C_{n-i-1} =>$ formula finala va fi  $C_n=\displaystyle\sum_{i=0}^{n-1} C_i \ C_{n-i-1}$
+* **Demonstratie:** Impartim o parantezare corecta in 2 parti: Prima parte va fi cel mai scurt subfix parantezat corect, iar cealalta parte restul. Vom itera cu un indice $i$ de la $0$ la $n-1$. Prima parte va fi imprejmuita de o pereche de paranteze, si deci numarul de posibilitati de parantezare corecta a acesteia este $C_i\ $. Ramanem cu $n-i-1$ perechi de paranteze pentru a doua parte, deci $C_{n-i-1}$ posibilitati $\implies$ pentru un $i$ selectat avem formula $C_i \ C_{n-i-1} \implies$ formula finala va fi  $C_n=\displaystyle\sum_{i=0}^{n-1} C_i \ C_{n-i-1}$
 * **Lema:** $C_n=\dfrac{C_{2n}^n}{n+1}$
-* **Demonstratie:** [Brilliant.org - Catalan](https://brilliant.org/wiki/catalan-numbers/). Pe scurt, exista $C_{2n}^n$ modalitati de parantezare nu neaparat corecte. Daca $U_n$ este numarul de modalitati de parantezare incorecte, atunci $C_n=C_{2n}^n-U_n$. Pentru a calcula $U_n$ vom analiza o secventa incorecta, $A$. Pentru aceasta secventa va exista un $k$ minim astfel incat parantezarea cu prefixul pana la indicele $k$ sa fie incorecta $=>$ parantezarea cu prefixul pana la indicele $k$ va contine $\dfrac{k-1}{2}$ paranteze deschise si $\dfrac{k+1}{2}$ paranteze deschise. Daca inversam parantezele acestui prefix si notam parantezarea totala rezultata cu $B$ atunci va exista o bijectie intre multimiea $A$-urilor si multimea $B$-urilor, si cum multimea $B$-urilor are cardinalul $C_{2n}^{n+1}=>U_n=C_{2n}^{n+1} => C_n=C_{2n}^n-U_n=C_{2n}^n-C_{2n}^{n+1}=\dfrac{C_{2n}^n}{n+1}\ $. 
+* **Demonstratie:** [Brilliant.org - Catalan](https://brilliant.org/wiki/catalan-numbers/). Pe scurt, exista $C_{2n}^n$ modalitati de parantezare nu neaparat corecte. Daca $U_n$ este numarul de modalitati de parantezare incorecte, atunci $C_n=C_{2n}^n-U_n$. Pentru a calcula $U_n$ vom analiza o secventa incorecta, $A$. Pentru aceasta secventa va exista un $k$ minim astfel incat parantezarea cu prefixul pana la indicele $k$ sa fie incorecta $\implies$ parantezarea cu prefixul pana la indicele $k$ va contine $\dfrac{k-1}{2}$ paranteze deschise si $\dfrac{k+1}{2}$ paranteze deschise. Daca inversam parantezele acestui prefix si notam parantezarea totala rezultata cu $B$ atunci va exista o bijectie intre multimiea $A$-urilor si multimea $B$-urilor, si cum multimea $B$-urilor are cardinalul $C_{2n}^{n+1}\implies U_n=C_{2n}^{n+1} \implies C_n=C_{2n}^n-U_n=C_{2n}^n-C_{2n}^{n+1}=\dfrac{C_{2n}^n}{n+1}\ $. 
 
 ## [Partitiile unei multimi](https://ro.wikipedia.org/wiki/Parti%C8%9Bie_(matematic%C4%83))
 * O **partitie** a unei multimi este o multime de submultimi nevide ce nu au niciun element in comun si a caror reuniune este multimea initiala.
@@ -82,17 +82,17 @@ Combinatorica este latura matematicii care se ocupa de numararea unui numar de p
 > Se cam invata in a 12-a $\dots$
 * Operatia **modulo** reprezinta restul impartirii unui numar la alt numar si se noteaza cu ``%``.
 * Exemple:
-    * $5\ \% \ 2=1$
-    * $6\ \% \ 3=0$
-    * $4\ \% \ 5=4$
-* **Definitie:** $2$ numere sunt congruente *modulo* $N$ daca ambele numere sunt egale *modulo* $N$ $(a \equiv b \bmod N \iff a \ \% \ N=b \ \% \ N)$ 
-* $a \equiv b \bmod N \iff N\ |\ a-b$
-* $a+b \equiv a\ \%\ N + b\ \%\ N \bmod N\iff (a+b)\ \%\ N = (a\ \%\ N + b\ \%\ N)\ \%\ N$
-* $a-b \equiv a\ \%\ N - b\ \%\ N +N\bmod N\iff (a-b)\ \%\ N = (a\ \%\ N - b\ \%\ N + N)\ \%\ N\ $ (adaugam $N$, deoarece in urma scaderii putem avea rezultat negativ)
-* $a \cdot b \equiv (a\ \%\ N) \cdot (b\ \%\ N) \bmod N\iff (a \cdot b)\ \%\ N = ((a\ \%\ N) \cdot (b\ \%\ N))\ \%\ N$
-* **Atentie! :** $a\ /\ b \not \equiv (a\ \%\ N)\ /\ (b\ \%\ N) \bmod N$, adica $(a\ /\  b)\ \%\ N \not = ((a\ \%\ N)\ /\ (b\ \%\ N))\ \%\ N$
+    * $`5\ \% \ 2=1`$
+    * $`6\ \% \ 3=0`$
+    * $`4\ \% \ 5=4`$
+* **Definitie:** $2$ numere sunt congruente *modulo* $N$ daca ambele numere sunt egale *modulo* $N$ $`(a \equiv b \bmod N \iff a \ \% \ N=b \ \% \ N)`$ 
+* $`a \equiv b \bmod N \iff N\ |\ a-b`$
+* $`a+b \equiv a\ \%\ N + b\ \%\ N \bmod N\iff (a+b)\ \%\ N = (a\ \%\ N + b\ \%\ N)\ \%\ N`$
+* $`a-b \equiv a\ \%\ N - b\ \%\ N +N\bmod N\iff (a-b)\ \%\ N = (a\ \%\ N - b\ \%\ N + N)\ \%\ N\ `$ (adaugam $N$, deoarece in urma scaderii putem avea rezultat negativ)
+* $`a \cdot b \equiv (a\ \%\ N) \cdot (b\ \%\ N) \bmod N\iff (a \cdot b)\ \%\ N = ((a\ \%\ N) \cdot (b\ \%\ N))\ \%\ N`$
+* **Atentie! :** $`a\ /\ b \not \equiv (a\ \%\ N)\ /\ (b\ \%\ N) \bmod N`$, adica $`(a\ /\  b)\ \%\ N \not = ((a\ \%\ N)\ /\ (b\ \%\ N))\ \%\ N`$
 
-    Pentru a putea calcula impartirea a doua numere modulo alt numar va trebui sa ne folosim de un numar numit **invers modular**. In loc da a impartii $a$ la $b$, vom inmulti $a$ cu **inversul modular** al lui $b$.
+    Pentru a putea calcula impartirea a doua numere modulo alt numar va trebui sa ne folosim de un numar numit **invers modular**. In loc de a impartii $a$ la $b$, vom inmulti $a$ cu **inversul modular** al lui $b$.
 
 ## [Invers Modular](https://en.wikipedia.org/wiki/Modular_multiplicative_inverse)
 * Inversul modular al unui numar, $a$ , este un alt numar, $x$ , astfel incat $a \cdot x \equiv 1 \bmod N$ (numarul cu care il putem inmulti pe $a$, astfel incat restul impartirii la $N$ sa fie $1$).
@@ -101,7 +101,7 @@ Combinatorica este latura matematicii care se ocupa de numararea unui numar de p
 * Inversul modular al unui numar se poate calcula prin [Teorema lui Euler](https://en.wikipedia.org/wiki/Euler%27s_theorem).
     * Teorema lui Euler este urmatoarea: daca $\gcd(a, N)=1$, atunci $a^{\varphi(N)}$ este inversul modular al lui $a$ modulo $N$, unde $\varphi(N)$ este [coeficientul lui Euler al lui $N$](https://en.wikipedia.org/wiki/Euler%27s_totient_function), adica numarul de numere pozitive, mai mici cu $N$ si coprime cu acesta.
     * Pentru $N$ numar prim, $\varphi(N)=N-2$, deci inversul modular al lui $a$ va fi $a^{N-2}$.
-* In concluzie, daca $n$ este prim, $a\ /\ b \equiv (a\ \%\ N) \cdot (b^{N-2}\ \% \ N) \bmod N \iff (a\ /\  b)\ \%\ N = ((a\ \%\ N) \cdot ((b\ \%\ N)^{N-2}\ \% \ N))\ \%\ N$
+* In concluzie, daca $n$ este prim, $`a\ /\ b \equiv (a\ \%\ N) \cdot (b^{N-2}\ \% \ N) \bmod N \iff (a\ /\  b)\ \%\ N = ((a\ \%\ N) \cdot ((b\ \%\ N)^{N-2}\ \% \ N))\ \%\ N`$
 
 ## Calculul informatic al elementelor combinatoriale
 Mai jos aveti un program care calculeaza principalele elemente combinatoriale
