@@ -1,4 +1,4 @@
-> Cine spune ca matematica nu are treaba cu informatica nu se numara printre progrmatorii adevarati
+> Cine spune ca matematica nu are treaba cu informatica nu se numara printre programatorii adevarati
 # [Elemente de Combinatorica](https://ro.wikipedia.org/wiki/Combinatoric%C4%83)
 
 Combinatorica este latura matematicii care se ocupa de numararea unui numar de posibilitati.
